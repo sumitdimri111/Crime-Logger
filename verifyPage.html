@@ -1,0 +1,19 @@
+<?php 
+	session_start();
+	if(!isset($_SESSION['username']) && empty($_SESSION['username']))
+	{
+    	header('location: login.php');
+  	}
+?>
+<?php include('confimation.php'); ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Verify Account</title>
+</head>
+<body>
+	<h3> Please verify your account. </h3>
+	<p> <h4> <a href="verify.php">Click here</a> </h4> to get verification msg... </p>
+</body>
+</html>
